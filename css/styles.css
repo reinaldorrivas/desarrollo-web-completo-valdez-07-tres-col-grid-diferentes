@@ -53,19 +53,31 @@ p {
   .contenedor-grid {
     display: grid;
     column-gap: 2rem;
+    /*
+    grid-template-areas: "nosotros main mision";
+    */
     grid-template-columns: 1fr 3fr 1fr;
     grid-auto-flow: column;
   }
 
   .contenido-principal {
+    /*
+    grid-column: main;
+    */
     grid-column: 2 / 3;
   }
 
   .sidebar-nosotros {
+    /*
+    grid-column: nosotros;
+    */
     grid-column: 1 / 2;
   }
 
   .sidebar-mision {
+    /*
+    grid-column: mision;
+    */
     grid-column: 3 / 4;
   }
 }
